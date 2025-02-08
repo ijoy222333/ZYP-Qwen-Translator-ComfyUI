@@ -1,0 +1,112 @@
+{
+  "last_node_id": 12,
+  "last_link_id": 11,
+  "nodes": [
+    {
+      "id": 11,
+      "type": "QwenTranslator",
+      "pos": [
+        239.9927215576172,
+        -135.40811157226562
+      ],
+      "size": [
+        400,
+        249
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "translated_text",
+          "type": "STRING",
+          "links": [
+            11
+          ],
+          "slot_index": 0,
+          "label": "translated_text"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "QwenTranslator"
+      },
+      "widgets_values": [
+        "一只毛茸茸、棕褐色的小狗，清晨的露水沾湿了它的毛发，在繁忙的城市街道上飞奔。沥青在刺眼的日光下闪耀着，反射出耀眼的光线。小狗瞪大了充满兴奋的眼睛，疯狂地用爪子拍打着裂缝路面中松散的鹅卵石，短小的腿快速地跳跃着。汽车在闪着铬和深色玻璃的车窗外疾驰而过，喇叭声划破空气，与小狗欢快的活力形成鲜明对比。阳光照射下，空气中的尘埃微粒在舞动。尽管城市的声音很大，但似乎都消融在背景之中，小狗小小的身影在路面上移动的巨大景观面前显得格外渺小。",
+        "English",
+        506805822856183,
+        "randomize",
+        512,
+        0.7,
+        50,
+        0.9,
+        true
+      ]
+    },
+    {
+      "id": 12,
+      "type": "ShowText|pysssss",
+      "pos": [
+        693.0177612304688,
+        -143.65074157714844
+      ],
+      "size": [
+        525.7727661132812,
+        461.83074951171875
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 11,
+          "widget": {
+            "name": "text"
+          },
+          "label": "文本"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6,
+          "label": "字符串"
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        "",
+        "A fuzzy brown puppy, its fur dampened by morning dew, dashes across the busy city streets. The asphalt gleams in the glaring sunlight, reflecting a dazzling light. The puppy, with wide eyes brimming with excitement, wildly flaps loose pebbles from the cracks of the cracked pavement with its paws, leaping with short legs. Cars zip past outside the windows, their chrome and dark glass glinting, their honks slicing through the air, starkly contrasting with the puppy’s exuberant energy. In the sunlight, dust particles dance in the air. Despite the cacophony of sounds from the city, they seem to be absorbed into the background, dwarfing the tiny figure of the puppy as it moves across the monumental scene of the city road."
+      ]
+    }
+  ],
+  "links": [
+    [
+      11,
+      11,
+      0,
+      12,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.5535220464768966,
+      "offset": {
+        "0": 15.68852424621582,
+        "1": 398.593505859375
+      }
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
